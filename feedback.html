@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Jack's Personal Website</title>
+	<link rel="stylesheet" href="css\style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="js/skins/flat/blue.css" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/icheck.min.js"></script>
+
+
+	
+</head>
+<body>
+	<style>
+
+	</style>
+	<div id="topcontainer">
+	<header>
+
+	<div class="background"></div>
+		<div class="tips">
+		<span> Scroll down </span><br/>
+		<a href="#main">
+		<img src="images\arrow.png" alt="down arrow" title="Click Me"/ >
+		</a>
+		</div>
+		<nav>
+			<h2>Content</h2>
+			<ul>
+				<li><a href="index.html">Intro</a></li>
+				<li><a href="hometown.html">Hometown</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="interest.html">Interest</a></li>
+				<li><a href="inspiration.html">Inspiration</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+	<section id="main">
+
+
+	<h2>Let me know more about you</h2>
+		<form id="form" method="post">
+				
+		<h3>Name*:</h3>
+		<input id="name" class="text" type="text" />
+		<div class="message"></div><br/>
+		
+		<h3>Gender*:</h3>
+		
+		<br/>
+		<input type="radio" name="gender" id="male" value="M"/>
+		<label for="male">Male</label>
+		
+		<input type="radio" name="gender" id="female" value="f"/>
+		<label for="female">Female</label>
+		<div id='gender' class="message"></div>
+		
+
+		<h3>Date of Birth*:</h3>
+		
+		<input type="date" name="dob">
+		<div class="message"></div>
+		<br/>	
+		
+		<h3>If the average human life span was 40 years, how would you live your life differently*?<em>(Any 3)</em></h3>
+		<br/>
+		<input type="checkbox" name="life"  value="mailingList" />
+		<label for="life" >
+			Learn how to play an instrument
+		</label><br/>
+
+		<input type="checkbox" name="life"  value="0" />
+		<label for="life" >
+			Travel around the world.
+		</label><br/>
+
+		<input type="checkbox" name="life"  value="1"  />
+		<label for="life" >
+			Do work you are passion on.
+		</label><br/>
+
+		<input type="checkbox" name="life"  value="2"  />
+		<label for="life" >
+			Spend time with your family.
+		</label><br/>
+
+		<input type="checkbox" name="life" value="3"  />
+		<label for="life" >
+			Make a lot of friends
+		</label>
+		<div  id="life" class="message"></div>
+		<br/>
+
+	
+		<h3>If you can choose a country where you live,where would you like to live in *?</h3>
+		
+		<select name="country" id="country" class="selection">
+			
+			<option disabled selected value> -- select an option -- </option>
+			<option value="0">China</option>
+			<option value="1">Europe</option>
+			<option value="2">Japan</option>
+			<option value="3">Korea</option>
+			<option value="4">Malaysia</option>
+			<option value="5">Singapore</option>
+			<option value="6">UK</option>
+			<option value="other">US</option>
+		</select><div class="message"></div><br/>
+		
+		<h3>Try use 3 words to describe yourself or what make you special.*<em>(Exactly 3 words)</em></h3>
+		<textarea id="describe" rows="2" cols="100" placeholder="Example:Calm problematic responsible "></textarea><div class="message"></div><br/>
+
+		<input type="submit" value="Send Information" />
+		<input type="reset" value="Cancel" />
+				<!-- <label>Mailto: helloworld@gmail.com&nbsp;</label><br/> -->
+				<!-- <label for="email">Your email: </label> -->
+				<!-- <input class="text" name="email" id="email" type="text" placeholder=" example@example.com " /><br /> -->
+				<!-- <textarea name="reply" id="reply" placeholder="Type your Message here.&clubs;"></textarea> -->
+				<!-- <input id="btn" type="submit" /> -->
+				
+		</form>
+	</section><!-- end of main section -->
+	<footer>
+		<span>All &copy CopyRight are Reserved </span>
+	</footer>
+	</div>
+	<script src="js/velocity.js"></script>
+	<script src="js/velocity.ui.js"></script>
+	<script src="js/blast.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/validate.js"></script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+/* Author :Jack Ng Wei Ming */
+/* Class : DIT/FT/1A/22 */
+
+
+/* Reset broswer setting */
+
+*{
+	margin :0;
+	padding:0;
+}
+
+a
+{
+	text-decoration:none;
+	color:#000;
+}
+
+/* body */
+
+body
+{
+	position:relative;
+	background-color:#fff;
+	color: #97b0c0;
+	font-family: "Bodoni MT"; 	font-size  :15px; 
+	overflow-y: scroll;
+}
+/* top container */
+
+#topcontainer
+{
+		
+	background:#fff url("../images/logoside.png") no-repeat;
+}
+
+header{
+	height:700px;
+}
+/* navigation bar */		
+header h1{
+	font-family:'Engravers MT';
+	color:white;
+	font-size:50px;
+	position:absolute;	
+	left:40px;
+	top:800px;
+	transform-origin:left top;
+	transform:rotate(-90deg);
+}
+header h1::first-letter{
+	font-size:100px;
+}
+nav
+{
+
+	position:relative;
+	top:-275px;	
+	margin-left:170px;
+	color: black;
+	font-size: 2em;
+	text-shadow: -3px 2px 5px rgba(215, 219, 226,0.7);	
+}
+
+nav h2
+{
+	padding: 0 ;
+	color:#8cc6e8;
+	font-size: 1.7em;
+	text-shadow: -3px 2px 5px rgba(215, 219, 226,0.5);
+	font-family:"Bodoni MT";
+}
+
+nav a
+{
+	display:inline-block;
+	text-decoration:none;
+	width:200px;
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+nav ul a:hover {
+	color:#8cc6e8;
+	width:250px;
+}
+
+
+ul{
+	display:inline-block;
+}
+ul li
+{
+	position:relative;
+	display:inline-block;
+	list-style-type:none;
+}
+
+div.background
+{
+	position:relative;
+	display:inline-block;
+	width: 800px;
+	height:550px;
+	background-image:url("../images/logotop.png"); background-repeat:no-repeat; background-size:length;
+	
+}
+
+div.tips{
+	position:relative;
+	display:inline-block;
+	text-align:center;
+	z-index:999;
+	/* <!-- vertical-align: top; --> */
+	/* <!-- width:  200px; --> */
+}
+
+div.tips a{
+	position:relative;
+}
+
+	
+div.triangle{
+	
+	display:inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 10px;
+	border-top: 0.2em solid transparent;
+	border-left: 0.4em solid #8cc6e8;
+	border-bottom: 0.2em solid transparent;
+}
+
+/* main content */
+
+#main{
+	padding-top:50px;
+	margin-left:200px;
+
+}
+#firstentry
+{
+	padding:0 20px;
+	font-size:1.5em;
+}
+#content{
+	width:100%;
+}
+
+div.loadingWrapper
+{
+	display:flex;
+	position:fixed;
+	top:0; left:0;
+	background-image:url("../images/white.png");
+	justify-content: center;
+	align-items:center;
+	z-index:1000;
+	
+}
+div.loading {
+	position:fixed;
+	top:50%; left:50%;
+	width: 50px;
+    height: 50px;
+	border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    
+}
+img{
+	display:inline-block;
+	margin:15px 0;
+	max-width:100%;
+}
+div.imgcontainer
+{
+	display:inline-block;
+	margin-top		:100px;	
+	margin-bottom   :50px;
+	box-shadow		:0 0 14px 4px;
+	max-width		:100%;	
+}
+
+div.profile{
+	margin-top:20px;
+}
+
+
+
+
+blockquote
+{
+	display:inline-block;
+	width:80%;
+	padding			:40px 0px;
+	margin			:0 0 300px 50px;
+	border-width	:80%;
+	border-top	 	:1px solid #97b0c0;
+	border-bottom	:1px solid #97b0c0;
+	font-size		:2em;
+	line-height 	:2em;
+	text-align		:justify;
+}
+
+h2, h3
+{
+	width:100%;
+	padding:30px 0;
+	font-family:"PMingLiU-ExtB";
+	font-size		: 4em;
+	color: black;
+	text-shadow: -3px 2px 2px #97d1ef;
+}
+
+h3
+{
+	font-size:2em;
+}
+section div.banner{
+	width:80%;
+}
+section.rightcontent
+{
+	display:inline-block;
+	width  : 70%;
+	min-width:300px;
+	margin: 10px 10px;
+	padding: 0;
+	vertical-align:top;
+	
+}
+
+section.hidden
+{
+	display :inline-block ;
+	width:100%;
+	margin:0 1%;
+	vertical-align : top;
+	border : none;
+}
+
+section.hidden::after
+	{
+		content:"-read more"
+	}
+	
+section.hidden img
+{
+	display: inline-block;
+	margin : 5px auto;
+}	
+
+p.hidden
+{
+	width:40%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-transition:width 0.5s;
+	transition: width 0.5s;
+}
+
+p.hidden:hover{
+	overflow:visible;
+	text-overflow:string;
+	overflow:none;
+	width:100%;
+	height:auto;
+	white-space:normal;
+}
+
+
+
+section.horizontal
+{
+	width:100%;
+	min-width :200px;
+	margin : 5px auto;
+	border-radius:0;
+}
+section.horizontal article
+{
+	margin-top:150px;
+}
+
+section.horizontal div.imgcontainer{
+	max-width:400px;
+}
+article
+{
+	display:inline-block;
+	padding-left: 40px;
+	max-width:80%;
+	margin-bottom: 100px;
+	font-size  : 1.7em;
+	text-align : justify; 	
+}
+article h2
+{
+	font-size	: 2em;
+	text-shadow:none;
+	font-family:"Bodoni MT";
+}
+
+h2.right{
+		text-align:right;
+	}
+
+aside
+{
+	display	:inline-block;
+	width	: 20%;
+	min-width:150px;
+}
+	
+aside img
+{
+	width:100px;
+}
+
+.floatleft
+{
+	margin-right:20px;
+	float :left ;
+}
+	
+.floatright
+{
+	margin-left:20px;
+	float :right ;
+}
+section.horizontal div.imgcontainer
+{
+
+}
+
+/* form */
+form
+{
+	font-size:1.5em;
+}
+form h3,form h2
+{
+	font-size 	: 1.2em;
+	text-shadow	:-3px 2px 5px rgb(215, 219, 226);
+}
+div.message{
+	font-size:1em;
+	color:#fe6363;
+}
+.error{
+	color:#000 !important;
+    -moz-box-shadow:    0 0 10px #fe6363;
+    -webkit-box-shadow:  0 0 10px #fe6363;
+	box-shadow:         0 0 10px #fe6363 !important; 
+}
+.correct{
+	-moz-box-shadow:    0 0 10px #bbe288;
+   -webkit-box-shadow:  0 0 10px #bbe288;
+	box-shadow:         0 0 10px #bbe288 !important;
+	color:#bbe288 !important;
+	
+}
+	
+}
+input.text
+{
+	height:1.5em;
+}
+input.selection
+{
+	height:1.7em;
+}
+textarea{
+	width:85%;
+}
+footer
+{
+	margin:200px 0 auto;
+	width:100%;
+	box-shadow: 0 0 2px 1px;
+}
+
+@media screen and (max-width:1010px){
+	header{
+		height:700px;
+		position:relative;
+	}
+	div.tips{
+		position:absolute;
+		top:43%;
+		right:10px;
+	}
+	blockquote{
+		margin-bottom:200px;
+		margin-left:0;
+	}
+	h2{
+		font-size:3em;
+		clear:both;
+	}
+	h2.right{
+		text-align:left;
+	}
+	div.floatleft , div.floatright{
+		float:none;
+		
+	}
+	
+}
+@media screen and (max-width:800px){
+	div.tips{
+		display:none;
+	}
+	div.triangle{
+		display:none;
+	}
+	#main > div.imgcontainer{
+		margin-left:40px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	section.hidden::after{
+		content:"";
+	}
+	p.hidden{
+	text-overflow:string;
+	overflow:visible;
+	width:100%;
+	height:auto;
+	white-space:normal;
+}
+}
+@media screen and (max-width:600px){
+	body{
+		font-size: 14px;
+	}
+	#topcontainer
+	{
+		background:#fff url("../images/logoside-600.png") no-repeat;
+	}
+	#main{
+		margin-left:150px;
+	}
+	header h1{
+	font-size:40px;
+	left:37px;
+	top:650px;
+	}
+	header h1::first-letter{
+	font-size:80px;
+	}
+	nav{
+		margin-left:120px;
+	}
+	div.background{
+		width: 100%;
+		height:550px;
+		background-image:url("../images/logotop-600.png"); background-repeat:no-repeat; background-size:length;
+	}
+	
+	blockquote{
+		margin-right:0;
+		width:95%;
+		font-size: 1.7em;
+		line-height:1.5em;
+	}
+	
+	article{
+		padding:0;
+		font-size:1.5em;
+	}
+	article h2
+	{
+		font-size:23m;
+	}
+	section.rightcontent{
+		width:100%;
+	}
+	figure{
+		display:none;
+	}
+	#main div.imgcontainer
+	{
+		margin:0;
+	}
+}
+@media screen and (max-width:500px)
+{
+	body
+	{
+		font-size:10px;
+	}
+	#topcontainer
+	{
+		background:#fff url("../images/logoside-500.png") no-repeat;
+	}
+	#main{
+		margin-left:120px;
+	}
+	div.background{
+		width: 100%;;
+		height:550px;
+		background-image:url("../images/logotop-500.png"); background-repeat:no-repeat; background-size:length;
+	}
+	header{
+		height:550px;
+	}
+	header h1{
+	font-size:30px;
+	left:50px;
+	top:480px;
+	}
+	header h1::first-letter{
+	font-size:60px;
+	}
+	nav{
+		top:-350px;
+	}
+}
