@@ -69,7 +69,7 @@ function requestionPage(){
 	var jsPath='.\\js\\'+js;
 		$('#content').load(htmlPath,function(){
 			$.getScript(jsPath,function(){
-				setTimeout(initialization,1000);
+				setTimeout(initialization);
 			})
 			$title.text($currentLink.text());
 		});
@@ -86,11 +86,11 @@ function loadContent(){
 	$loading =$('.loadingWrapper')
 	$loading.css({
 		width:window.innerWidth,
-		height:window.innerHeight,
+		height:window.innerHeight
 	});
 	$loadingIcon.css({
 		top : $loadingIcon.attr('top')-$loadingIcon.attr('height')/2,
-		left :$loadingIcon.attr('left')--$loadingIcon.attr('width')/2,
+		left :$loadingIcon.attr('left')-$loadingIcon.attr('width')/2
 	});
 		
 	$('header').velocity('scroll',{duration:3000,offset:0,easing:'ease-in-out'});
@@ -106,7 +106,7 @@ function loadContent(){
 	var loadingSequence=[
 		{e:$loading,p:'transition.fadeIn'		,o:{display:'block',duration:3000,sequenceQueue:false}},
 		{e:$loadingIcon,p:{rotateZ:360	}		,o:{duration:3000,easing:'ease-out-in',loop:true,sequenceQueue:false}},
-		{e:$title ,p:{opacity:[0,1]}			,o:{duration:1500,easing:'ease-out-in',sequenceQueue:false}},
+		{e:$title ,p:{opacity:[0,1]}			,o:{display:'inline-block',duration:1500,easing:'ease-out-in',sequenceQueue:false}},
 		{e:$content,p:'transition.slideLeftBigOut',o:{display:'none',duration:2000,complete:requestionPage,sequenceQueue:false}},
 		{e:$footer ,p:'transition.slideLeftBigOut',o:{display:'none',duration:2000,sequenceQueue:false}}
 	]
@@ -120,7 +120,7 @@ function initialization(){
 		
 		var loadingSequence=[
 			{e:$loading,p:'transition.fadeOut'		,o:{display:'none',duration:3000,sequenceQueue:false}},
-			{e:$title  ,p:{opacity:[1,0]}		,o:{duration:3000,sequenceQueue:false}},
+			{e:$title  ,p:{opacity:[1,0]}		     ,o:{duration:3000,sequenceQueue:false}},
 			{e:$content,p:'transition.slideLeftBigIn',o:{display:'inline-block',duration:3000,delay:1000,sequenceQueue:false}},
 			{e:$footer ,p:'transition.slideLeftBigIn',o:{display:'inline-block',duration:3000,sequenceQueue:false}}
 		];
