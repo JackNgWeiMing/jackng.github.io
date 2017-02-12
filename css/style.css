@@ -130,22 +130,8 @@ div.triangle{
 	border-bottom: 0.2em solid transparent;
 }
 
-/* main content */
 
-#main{
-	padding-top:50px;
-	margin-left:200px;
-
-}
-#firstentry
-{
-	padding:0 20px;
-	font-size:1.5em;
-}
-#content{
-	width:100%;
-}
-
+/* loading page */
 div.loadingWrapper
 {
 	display:flex;
@@ -157,6 +143,7 @@ div.loadingWrapper
 	z-index:1000;
 	
 }
+/* loading icon */
 div.loading {
 	position:fixed;
 	top:50%; left:50%;
@@ -167,6 +154,7 @@ div.loading {
     border-radius: 50%;
     
 }
+/*  general */
 img{
 	display:inline-block;
 	margin:15px 0;
@@ -186,7 +174,19 @@ div.profile{
 }
 
 
+#main{
+	padding-top:50px;
+	margin-left:200px;
 
+}
+#firstentry
+{
+	padding:0 20px;
+	font-size:1.5em;
+}
+#content{
+	width:100%;
+}
 
 blockquote
 {
@@ -358,7 +358,7 @@ div.message{
 	-moz-box-shadow:    0 0 10px #bbe288;
    -webkit-box-shadow:  0 0 10px #bbe288;
 	box-shadow:         0 0 10px #bbe288 !important;
-	color:#bbe288 !important;
+	color:#ff0000 !important;
 	
 }
 	

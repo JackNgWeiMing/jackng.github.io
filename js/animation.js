@@ -103,7 +103,7 @@ function loadContent(){
 	var loadingSequence=[
 		{e:$loading,p:'transition.fadeIn'		,o:{display:'block',duration:3000,sequenceQueue:false}},
 		{e:$loadingIcon,p:{rotateZ:360	}		,o:{duration:3000,easing:'ease-out-in',loop:true,sequenceQueue:false}},
-		{e:$title ,p:{opacity:[0,1]}			,o:{display:'inline-block',duration:1500,easing:'ease-out-in',sequenceQueue:false}},
+		{e:$title ,p:{opacity:[0.2,1]}			,o:{duration:1500,easing:'ease-out-in',sequenceQueue:false}},
 		{e:$content,p:'transition.slideLeftBigOut',o:{display:'none',duration:2000,complete:requestionPage,sequenceQueue:false}},
 		{e:$footer ,p:'transition.slideLeftBigOut',o:{display:'none',duration:2000,sequenceQueue:false}}
 	]
