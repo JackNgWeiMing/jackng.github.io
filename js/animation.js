@@ -65,7 +65,7 @@ function requestionPage(){
 	
 	var href=$currentLink.attr('href');
 	var js=$currentLink.data('js');
-	var htmlPath='..\\'+href+' #main';
+	var htmlPath=href+' #main';
 	var jsPath='.\\js\\'+js;
 		$('#content').load(htmlPath,function(){
 			$.getScript(jsPath,function(){
