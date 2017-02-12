@@ -511,6 +511,10 @@ footer
 	left:50px;
 	top:480px;
 	}
+	
+	blockquote{
+		margin-bottom:100px;
+	}
 	header h1::first-letter{
 	font-size:60px;
 	}

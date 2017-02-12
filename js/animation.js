@@ -65,7 +65,7 @@ function requestionPage(){
 	
 	var href=$currentLink.attr('href');
 	var js=$currentLink.data('js');
-	var htmlPath= href +' #main';
+	var htmlPath='..\\'+href+' #main';
 	var jsPath='.\\js\\'+js;
 		$('#content').load(htmlPath,function(){
 			$.getScript(jsPath,function(){
@@ -85,13 +85,10 @@ function loadContent(){
 	$loadingIcon = $('.loading')
 	$loading =$('.loadingWrapper')
 	$loading.css({
-		width:window.innerWidth,
-		height:window.innerHeight
+		'width':window.innerWidth,
+		'height':window.innerHeight
 	});
-	$loadingIcon.css({
-		top : $loadingIcon.attr('top')-$loadingIcon.attr('height')/2,
-		left :$loadingIcon.attr('left')-$loadingIcon.attr('width')/2
-	});
+
 		
 	$('header').velocity('scroll',{duration:3000,offset:0,easing:'ease-in-out'});
 	if(window.innerWidth>800){
@@ -152,7 +149,7 @@ $hidden.click(function(){
 
 function attachEvent(){
 	
-	$('nav ul li a, #firstentry').click(function(e){
+	$('nav ul li a').click(function(e){
 
 		e.preventDefault();
 		$previous=$currentLink;
@@ -160,6 +157,11 @@ function attachEvent(){
 		$(this).siblings('.triangle').remove(); 
 		loadContent();
 	})
+	
+	$(' #firstentry').click(function(e){
+		e.preventDefault();
+		$('#present').trigger('click');
+	});
 	
 	$('div.tips a').on('click',function(e){
 		e.preventDefault();
